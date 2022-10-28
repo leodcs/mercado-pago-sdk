@@ -1,10 +1,10 @@
 module Mercadopago
   class HttpResponse
-    attr_reader :status, :message
+    attr_reader :status, :body
 
-    def initialize(status, message)
+    def initialize(status, body)
       @status = status
-      @message = JSON.parse(message)
+      @body = JSON.parse(body)
     end
 
     def success?
