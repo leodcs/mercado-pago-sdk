@@ -21,5 +21,6 @@ require_relative './mercadopago/resources/payment_methods'
 require_relative './mercadopago/resources/advanced_payment'
 require_relative './mercadopago/resources/disbursement_refund'
 require_relative './mercadopago/resources/subscription'
+require_relative './mercadopago/resources/authorized_payment'
 
 require_relative './mercadopago/sdk'
