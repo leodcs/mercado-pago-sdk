@@ -15,5 +15,9 @@ module Mercadopago
 
       _post(uri: '/preapproval/', data: data, request_options: request_options)
     end
+
+    def get(subscription_id, request_options: nil)
+      _get(uri: "/preapproval/#{subscription_id}", request_options: request_options)
+    end
   end
 end
